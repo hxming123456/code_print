@@ -260,7 +260,7 @@ class SerailUI(wx.Frame):
         qccode_list['deviceid'] = devicedid
         qccode_list['apikey'] = apikey
         md5_hex = self.md5(qccode_list['deviceid'] + qccode_list['apikey'])
-        str = '54.223.98.144:8080/api/user/device/addGsm?\r\nid=' + md5_hex
+        str = 'https://54.223.98.144:8080/api/user/device/addGsm?\r\nid=' + md5_hex
         #str = qccode_list['apikey']
         #print qccode_list['deviceid']+'\n'+qccode_list['apikey']
         print "bmp_id:%s"%qccode_list['deviceid']
